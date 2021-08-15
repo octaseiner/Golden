@@ -35,16 +35,6 @@ body{
         margin-bottom: 35px;
         font-weight: 500;
         position: relative;
-        &::before{
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            background-color: $negroFondo;
-            height: 2px;
-            box-sizing: border-box;
-            width: 50px;
-        }
     }
     ul{
         list-style: none;
@@ -69,5 +59,20 @@ body{
             }
             }
         }
+    }
+}
+
+// Responsive
+
+@media(max-width: 767px){
+    .footer_col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer_col{
+        width: 100%;
     }
 }
