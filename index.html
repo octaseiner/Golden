@@ -10,9 +10,9 @@
 </head>
 <body>
     <head>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">GOLDEN</a>
+                <a href="index.html"><img src="media/Golden LOGO-01.png" id="logo" width="200px" alt="GOLDEN logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -21,10 +21,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Remeras
                             </a>
@@ -33,14 +33,14 @@
                                 <li><a class="dropdown-item" href="#">Harry Styles</a></li>
                                 <li><a class="dropdown-item" href="#">Louis Tomlinson</a></li>
                                 <li><a class="dropdown-item" href="#">Personalizados</a></li>
-                                <li><a class="dropdown-item" href="#">Otros</a></li>
+                                <li><a class="dropdown-item" id="otroIndex" href="#">Otros</a></li>
                             </ul>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Preguntas frecuentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Preguntas frecuentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
+                            <a class="nav-link" href="#">Contactanos</a>
                         </li>
                     </ul>
                 </div>
@@ -51,53 +51,124 @@
     <main>
         <!-- SECCIÓN PRINCIPAL -->
         <section id="principalIndex">
-            <h1>Diseños personalizados</h1>
-            <p>Somos un grupo de emprendedores que hacemos remeras estampadas
-                mediante un sistema llamado sublimación. Hacemos todo el trabajo
-                en nuestros talleres y lo hacemos llegar a distintos puntos del pais.
-            </p>
-            <div>
-                <img src="" alt="">
-                <span><p>Diseñá tu imagen</p></span>
-                <img src="" alt="">
-                <span><p>Envianos tu diseño</p></span>
-                <img src="" alt="">
-                <span><p>Hacemos la remera para vos</p></span>
+            <div id="principalDiseños">
+                <div id="h1">
+                    <h1>Diseños personalizados</h1>
+                    <p>Somos un grupo de emprendedores que hacemos remeras estampadas                            mediante un sistema llamado sublimación. Hacemos todo el trabajo
+                        en nuestros talleres y lo hacemos llegar a distintos puntos del pais.
+                    </p>
+                </div>
+                <div id="ticksIndex">
+                    <div>
+                        <img src="media/Icono check.png" width="20px" height="20px" alt="Icono check">
+                        <p>Diseñá tu imagen</p>
+                    </div>
+                    <div>
+                        <img src="media/Icono check.png" width="20px" height="20px" alt="Icono check">
+                        <p>Envianos tu diseño</p>
+                    </div>
+                    <div>
+                        <img src="media/Icono check.png" width="20px" height="20px" alt="Icono check">
+                        <p>Hacemos la remera para vos</p>
+                    </div>  
+                </div>
+                <div id="botonIndex">
+                    <button><a href="#">Ver más</a></button>
+                </div>
             </div>
-            <button><a href="#">Ver más</a></button>
 
-            <div>
-                <img src="" alt="">
-                <span><div>
-                    <p>Personalizados</p>
-                    <p>Estampamos imágenes</p>
-                </div></span>
-                <img src="" alt="">
-                <span><div>
-                    <p>Calidad</p>
-                    <p>Garantizada</p>
-                </div></span>
-                <img src="" alt="">
-                <span><div>
-                    <p>Envíos/p>
-                    <p>A todo el país</p>
-                </div></span>
-                <img src="" alt="">
-                <span><div>
-                    <p>Contactate</p>
-                    <p>Respondemos todas tus consultas</p>
-                </div></span>
+            <div id="vacioImagenes">
+                <div>
+                    <img src="media/flecha amarilla.png" width="50px" height="50px" alt="">
+                    <img src="media/Elipse amarillo.png" width="50px" height="50px" alt="">
+                    <img src="media/Estrella negra.png" width="50px" height="50px" alt="">
+                </div>
+                <div>
+                    <img src="media/Elipses amarillas.png" width="50px" height="50px" alt="">
+                    <img src="media/Elipse amarillo.png" width="50px" height="50px" alt="">
+                </div>
+                <div>
+                    <img src="media/Rombo negro.png" width="50px" height="50px" alt="">
+                    <img src="media/Flecha negra.png" width="50px" height="50px" alt="">
+                    <img src="media/Elipses negras.png" width="50px" height="50px" alt="">
+                </div>
             </div>
+        </section>
+
+        <!--  -->
+        <section id="iconosIndex">
+            <div>
+                <img src="media/Icono imagen.png" width="50px" height="50px" alt="Icono imagen">
+                <div>
+                    <p class="boldIndex">Personalizados</p>
+                    <p>Estampamos imágenes</p>
+                </div>
+            </div>
+            <div>           
+                <img src="media/Cálidad.png" width="50px" height="50px" alt="Icono calidad">
+                <div>
+                    <p class="boldIndex">Calidad</p>
+                    <p>Garantizada</p>
+                </div>
+            </div>
+            <div>
+                <img src="media/Icono entrega.png" width="50px" height="50px" alt="Icono entrega">
+                <div>
+                    <p class="boldIndex">Envíos</p>
+                    <p>A todo el país</p>
+                </div>
+            </div>
+            <div>
+                <img src="media/Icono contactanos.png" width="50px" height="50px" alt="Icono contactanos">
+                <div>
+                    <p class="boldIndex">Contactate</p>
+                    <p>Respondemos todas tus consultas</p>
+                </div>
+        </div>
         </section>
 
         <!-- CAROUSEL -->
         <section id="carouselIndex">
-            <div>
-                <h2>Más de 50 estampas para ver</h2>
-                <p>Estampas personalizadas y variedad de imágenes</p>
+            <div id="estampasIndex">
+                <div>
+                    <img src="media/Elipses amarillas.png" width="60px" height="100px" height="50px" alt="">
+                    <img src="media/Estrella blanca.png" width="50px" height="50px" alt="">
+                    <img src="media/Elipse amarillo.png" width="50px" height="50px" alt="">
+                </div>
+                <div id="estampa">
+                    <h2>Más de 50 <br>estampas para ver</h2>
+                    <p>Estampas personalizadas y variedad de imágenes</p>
+                </div>
+                <div>
+                    <img src="media/Ellipse blanca.png" width="50px" height="50px" alt="">
+                    <img src="media/Flecha blanca.png" width="50px" height="50px" alt="">
+                    <img src="media/Rombo amarillo.png" width="50px" height="50px" alt="">
+                    <img src="media/Elipses blancas.png" width="70px" height="90px" alt="">
+                </div>
             </div>
-            <div>
 
+            <div id="carouselExampleControls" class="carousel slide w-75" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 

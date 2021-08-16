@@ -1,0 +1,116 @@
+.navbar {
+    height: 70px;
+    background-color: #000000;
+    padding: 0%;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar-nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100rem;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}
+
+.nav-link {
+    font-family: Roboto, sans-serif;
+    font-size: 18pt;
+    color: #FFFFFF;
+}
+
+a.nav-link:hover {
+    border-bottom: 4px solid #FCDB35;
+    color: #FFFFFF;
+}
+
+.dropdown-menu {
+    padding: 0px 20px 5px 20px;
+    width: 300px;
+    background-color: #FCDB35;
+    box-shadow: 2px 2px 2px rgb(170, 170, 170);
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    margin-top: .125rem;
+}
+
+.dropdown-item {
+    background-color: #FCDB35;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 1rem;
+    padding-left: 0px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+a.dropdown-item:hover {
+    background-color: #000000;
+    color: #FCDB35;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+a#otroIndex {
+    border-bottom: none;
+}
+
+dl, ol, ul {
+    margin-top: 0.48rem;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    img#logo {
+        width: 120px;
+    }
+
+    .navbar {
+        height: 100%;
+        background-color: #000000;
+    }
+
+    .navbar-dark .navbar-toggler {
+        color: rgba(255,255,255,.55);
+        border-color: transparent;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar-nav {
+        height: auto; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-around; 
+    }
+
+    .nav-link {
+        font-family: Roboto, sans-serif;
+        font-size: 12pt;
+    }
+
+    a.nav-link:hover {
+        border-bottom: none;
+    }
+
+    .dropdown-item {
+        font-size: 10pt;
+    }
+
+    .dropdown-menu {
+        box-shadow: none;
+    }
+}
