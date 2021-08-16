@@ -1,0 +1,115 @@
+
+.navbar{
+    background-color: $negroFondo;
+    max-width: 100%;
+    max-height: 20%;
+    color: $blancoFondo;
+}
+
+.row-form{
+    background-color: $amarilloFondo;
+    margin: 35px 0 35px 0;
+    position: relative;
+
+    .estrella-formNegra{
+        width: 50px;
+        position: absolute;
+        top: 5%;
+        left: 43%;
+    }
+    
+    .elipse-formBlanca1{
+        width: 20px;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+    }
+
+    .rombo-formNegro{
+        width: 13px;
+        position: absolute;
+        top: 75%;
+        left: 15%;
+    }
+
+    .elipse-formNegra1{
+        width: 65px;
+        position: absolute;
+        top: 83%;
+        left: 10%;
+        transform: rotate(90deg);
+    }
+    .elipse-formNegra2{
+        width: 65px;
+        position: absolute;
+        top: 83%;
+        left: 16.5%;
+        transform: rotate(90deg);
+    }
+
+    .rombo-formNegro2{
+        width: 10px;
+        position: absolute;
+        top: 85%;
+        left: 35%;
+    }
+
+    .elipse-formBlanca2{
+        width: 10px;
+        position: absolute;
+        top: 75%;
+        left: 40%;
+    }
+
+    .elipse-formNegra3{
+        width: 65px;
+        position: absolute;
+        top: -8%;
+        right: 0;
+        transform: rotate(90deg);
+    }
+
+    .elipse-formNegra4{
+        width: 65px;
+        position: absolute;
+        top: 90%;
+        bottom: 0;
+        right: 0;
+        transform: rotate(90deg);
+    }
+    
+
+    .titulo-contacto{
+        font-size: 38pt;
+        font-weight: bold;
+        margin-top: 10%;
+    }
+    
+    .subtitulo-contacto{
+        font-size: 18pt;
+        padding-top: 10px;
+    }
+
+    
+    .form-class{
+            outline: none;
+            
+        .form-label{
+            color: $blancoFondo;
+        }
+
+        .btn-form{
+            margin: 15px 0 15px;
+            padding: 5px 30px; 
+            border: none;
+            font-weight: bold;
+            text-align: center;
+            background-color: $negroFondo;
+            color: $amarilloFondo;
+            border-radius: 10px;
+            float: right;
+        }
+    }
+}
+
+

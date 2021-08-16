@@ -44,6 +44,11 @@ body {
           padding-right: 8px;
           color: #000000; }
 
+.footer_logo {
+  background-color: #000000;
+  width: 25vh;
+  height: auto; }
+
 @media (max-width: 767px) {
   .footer_col {
     width: 50%;
@@ -52,3 +57,85 @@ body {
 @media (max-width: 574px) {
   .footer_col {
     width: 100%; } }
+
+.navbar {
+  background-color: #000000;
+  max-width: 100%;
+  max-height: 20%;
+  color: #F4F4F4; }
+
+.row-form {
+  background-color: #FCDB35;
+  margin: 35px 0 35px 0;
+  position: relative; }
+  .row-form .estrella-formNegra {
+    width: 50px;
+    position: absolute;
+    top: 5%;
+    left: 43%; }
+  .row-form .elipse-formBlanca1 {
+    width: 20px;
+    position: absolute;
+    top: 60%;
+    left: 10%; }
+  .row-form .rombo-formNegro {
+    width: 13px;
+    position: absolute;
+    top: 75%;
+    left: 15%; }
+  .row-form .elipse-formNegra1 {
+    width: 65px;
+    position: absolute;
+    top: 83%;
+    left: 10%;
+    transform: rotate(90deg); }
+  .row-form .elipse-formNegra2 {
+    width: 65px;
+    position: absolute;
+    top: 83%;
+    left: 16.5%;
+    transform: rotate(90deg); }
+  .row-form .rombo-formNegro2 {
+    width: 10px;
+    position: absolute;
+    top: 85%;
+    left: 35%; }
+  .row-form .elipse-formBlanca2 {
+    width: 10px;
+    position: absolute;
+    top: 75%;
+    left: 40%; }
+  .row-form .elipse-formNegra3 {
+    width: 65px;
+    position: absolute;
+    top: -8%;
+    right: 0;
+    transform: rotate(90deg); }
+  .row-form .elipse-formNegra4 {
+    width: 65px;
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    right: 0;
+    transform: rotate(90deg); }
+  .row-form .titulo-contacto {
+    font-size: 38pt;
+    font-weight: bold;
+    margin-top: 10%; }
+  .row-form .subtitulo-contacto {
+    font-size: 18pt;
+    padding-top: 10px; }
+  .row-form .form-class {
+    outline: none; }
+    .row-form .form-class .form-label {
+      color: #F4F4F4; }
+    .row-form .form-class .btn-form {
+      margin: 15px 0 15px;
+      padding: 5px 30px;
+      border: none;
+      font-weight: bold;
+      text-align: center;
+      background-color: #000000;
+      color: #FCDB35;
+      border-radius: 10px;
+      float: right; }
