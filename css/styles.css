@@ -188,35 +188,40 @@ section#carouselIndex {
 .boldIndex {
   font-weight: bold; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   /* MAIN */
-  section#principalIndex div#principalDiseños div#h1 {
-    width: 100%; }
-    section#principalIndex div#principalDiseños div#h1 h1 {
-      font-size: 15pt; }
-    section#principalIndex div#principalDiseños div#h1 p {
-      font-size: 10pt; }
-  section#principalIndex div#principalDiseños div#ticksIndex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 700px; }
-    section#principalIndex div#principalDiseños div#ticksIndex div {
+  section#principalIndex {
+    justify-content: center;
+    width: 100%;
+    height: 600px; }
+    section#principalIndex div#principalDiseños {
+      width: 80%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: center;
       align-items: center; }
-      section#principalIndex div#principalDiseños div#ticksIndex div p {
-        font-family: Roboto, sans-serif;
+      section#principalIndex div#principalDiseños div#h1 {
+        width: 100%; }
+        section#principalIndex div#principalDiseños div#h1 h1 {
+          font-size: 20pt; }
+        section#principalIndex div#principalDiseños div#h1 p {
+          font-size: 12pt; }
+      section#principalIndex div#principalDiseños div#ticksIndex {
         display: flex;
-        align-items: center;
-        height: 100%;
-        margin-top: 10px;
-        font-size: 10pt; }
-  section#principalIndex div#principalDiseños div#botonIndex {
-    width: 100%; }
-    section#principalIndex div#principalDiseños div#botonIndex button a {
-      font-size: 10pt; }
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%; }
+        section#principalIndex div#principalDiseños div#ticksIndex div p {
+          font-size: 10pt; }
+      section#principalIndex div#principalDiseños div#botonIndex {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px; }
+        section#principalIndex div#principalDiseños div#botonIndex button {
+          margin-top: 0px; }
+          section#principalIndex div#principalDiseños div#botonIndex button a {
+            font-size: 10pt; }
   section#iconosIndex {
     display: flex;
     flex-direction: column;
@@ -228,9 +233,11 @@ section#carouselIndex {
     section#iconosIndex div {
       width: 100%;
       border-bottom: 1px solid #000000;
-      margin-bottom: 20px; }
+      margin: 10px 0px 10px 0px; }
       section#iconosIndex div div {
         border-bottom: none; }
+    section#iconosIndex div#contactateIndex {
+      border-bottom: none; }
   section#carouselIndex {
     width: 100%;
     height: 100%;
@@ -243,9 +250,74 @@ section#carouselIndex {
       justify-content: center;
       align-items: center; }
       section#carouselIndex div#estampasIndex div#estampa {
-        width: 100%;
-        height: auto; }
+        width: 80%;
+        height: auto;
+        margin: 20px 0px 20px 0px; }
         section#carouselIndex div#estampasIndex div#estampa h2 {
           font-size: 20pt; }
         section#carouselIndex div#estampasIndex div#estampa p {
-          font-size: 16pt; } }
+          font-size: 12pt; }
+  .hiddenIndex {
+    display: none; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section#principalIndex {
+    justify-content: center;
+    width: 100%; }
+    section#principalIndex div#principalDiseños {
+      width: 80%; }
+      section#principalIndex div#principalDiseños div#h1 {
+        width: 100%; }
+        section#principalIndex div#principalDiseños div#h1 h1 {
+          font-size: 38pt; }
+        section#principalIndex div#principalDiseños div#h1 p {
+          font-size: 18pt; }
+      section#principalIndex div#principalDiseños div#ticksIndex {
+        width: 100%; }
+        section#principalIndex div#principalDiseños div#ticksIndex div p {
+          font-size: 12pt; }
+      section#principalIndex div#principalDiseños div#botonIndex {
+        width: 100%;
+        justify-content: center; }
+    section#principalIndex div#vacioImagenes {
+      width: 50%; }
+  section#iconosIndex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px 20px 50px; }
+    section#iconosIndex div {
+      width: 80%;
+      border-bottom: 1px solid #000000;
+      margin: 10px 0px 10px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      section#iconosIndex div div {
+        border-bottom: none;
+        margin: 10px 0px 0px 0px; }
+    section#iconosIndex div#contactateIndex {
+      border-bottom: none; }
+  section#carouselIndex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+    section#carouselIndex div#estampasIndex {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      section#carouselIndex div#estampasIndex div#estampa {
+        width: 80%;
+        height: auto;
+        margin: 100px 0px 50px 0px; }
+        section#carouselIndex div#estampasIndex div#estampa h2 {
+          font-size: 32pt; }
+        section#carouselIndex div#estampasIndex div#estampa p {
+          font-size: 18pt; }
+  .hiddenIndex {
+    display: none; } }
