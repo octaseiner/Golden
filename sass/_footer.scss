@@ -62,6 +62,12 @@ body{
     }
 }
 
+.footer_logo{
+    background-color: $negroFondo;
+    width:25vh;
+    height: auto;
+}
+
 // Responsive
 
 @media(max-width: 767px){
