@@ -52,7 +52,8 @@ body {
 @media (max-width: 767px) {
   .footer_col {
     width: 50%;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px;
+    justify-content: flex-start; } }
 
 @media (max-width: 574px) {
   .footer_col {
@@ -139,3 +140,15 @@ body {
       color: #FCDB35;
       border-radius: 10px;
       float: right; }
+
+@media (max-width: 1024px) {
+  .elipse-formNegra3, .elipse-formNegra2, .elipse-formNegra4 {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .elipse-formNegra2, .elipse-formNegra4, .elipse-formNegra1, .rombo-formNegro2, .elipse-formBlanca1, .elipse-formBlanca2, .rombo-formNegro {
+    display: none; } }
+
+@media (max-width: 425px) {
+  .estrella-formNegra {
+    display: none; } }
