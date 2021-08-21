@@ -199,6 +199,42 @@ main#principalPersonalizados {
       main#principalPersonalizados ul li a {
         text-decoration: none; }
 
+@media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
+  main#principalPersonalizados {
+    padding: 30px;
+    margin-top: 50px; }
+    main#principalPersonalizados h1 {
+      font-size: 20pt; }
+    main#principalPersonalizados h2 {
+      font-size: 14pt;
+      margin-top: 50px; }
+    main#principalPersonalizados p {
+      font-size: 12pt;
+      margin-top: 50px; }
+    main#principalPersonalizados ul {
+      width: 100%; }
+      main#principalPersonalizados ul li {
+        font-size: 12pt;
+        margin-bottom: 15px; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  main#principalPersonalizados {
+    padding: 50px;
+    margin-top: 50px; }
+    main#principalPersonalizados h1 {
+      font-size: 38pt; }
+    main#principalPersonalizados h2 {
+      font-size: 18pt;
+      margin-top: 50px; }
+    main#principalPersonalizados p {
+      font-size: 16pt;
+      margin-top: 50px; }
+    main#principalPersonalizados ul {
+      width: 100%; }
+      main#principalPersonalizados ul li {
+        font-size: 16pt;
+        margin-bottom: 15px; } }
+
 main.remeras {
   padding: 100px; }
   main.remeras h1 {
@@ -223,6 +259,58 @@ main.remeras {
         main.remeras section div div p {
           font-size: 15pt;
           font-family: Roboto, sans-serif; }
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
+  main.remeras {
+    padding: 50px;
+    margin-top: 50px; }
+    main.remeras h1 {
+      font-size: 20pt;
+      font-weight: bold;
+      text-align: center;
+      font-family: Roboto, sans-serif; }
+    main.remeras section {
+      margin-top: 50px; }
+      main.remeras section div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0px; }
+        main.remeras section div div {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 40px; }
+          main.remeras section div div h2 {
+            font-size: 14pt; }
+          main.remeras section div div p {
+            font-size: 12pt; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  main.remeras {
+    padding: 50px;
+    margin-top: 50px; }
+    main.remeras h1 {
+      font-size: 38pt;
+      font-weight: bold;
+      text-align: center;
+      font-family: Roboto, sans-serif; }
+    main.remeras section {
+      margin-top: 50px; }
+      main.remeras section div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0px; }
+        main.remeras section div div {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 40px; }
+          main.remeras section div div h2 {
+            font-size: 18pt; }
+          main.remeras section div div p {
+            font-size: 16pt; } }
 
 section#principalIndex {
   display: flex;

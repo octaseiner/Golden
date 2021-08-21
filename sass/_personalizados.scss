@@ -32,3 +32,66 @@ main#principalPersonalizados {
         }
     }
 }
+
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 767px) {
+    main#principalPersonalizados {
+        padding: 30px;
+        margin-top: 50px;
+    
+        h1 {
+            font-size: 20pt;
+
+        }
+    
+        h2 {
+            font-size: 14pt;
+            margin-top: 50px;
+        }
+    
+        p {
+            font-size: 12pt;
+            margin-top: 50px;
+        }
+        
+        ul {
+            width: 100%;
+
+            li {
+                font-size: 12pt;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+    
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    main#principalPersonalizados {
+        padding: 50px;
+        margin-top: 50px;
+    
+        h1 {
+            font-size: 38pt;
+
+        }
+    
+        h2 {
+            font-size: 18pt;
+            margin-top: 50px;
+        }
+    
+        p {
+            font-size: 16pt;
+            margin-top: 50px;
+        }
+        
+        ul {
+            width: 100%;
+
+            li {
+                font-size: 16pt;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
