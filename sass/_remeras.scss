@@ -1,0 +1,37 @@
+main.remeras {
+    padding: 100px;
+
+    h1 {
+        font-size: 38pt;
+        font-weight: bold;
+        text-align: center;
+        font-family: $roboto;
+    }
+
+    section {
+        margin-top: 50px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 50px;
+
+            div {
+                background-color: $blancoFondo;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 20pt;
+                    font-family: $roboto;
+                }
+
+                p {
+                    font-size: 15pt;
+                    font-family: $roboto;
+                }
+            }
+        }
+    }
+}
