@@ -415,6 +415,99 @@ section#carouselIndex {
 .boldIndex {
   font-weight: bold; }
 
+.flecha-ama {
+  width: 100px;
+  position: absolute;
+  top: 30%;
+  left: 45%; }
+
+.elipse-ama {
+  width: 25px;
+  position: absolute;
+  top: 75%;
+  left: 45%; }
+
+.estrella-neg {
+  width: 35px;
+  position: absolute;
+  top: 65%;
+  left: 53%; }
+
+.elipses-ama {
+  width: 60px;
+  position: absolute;
+  top: 9%;
+  left: 80%;
+  transform: rotate(90deg); }
+
+.elipse-ama2 {
+  width: 25px;
+  position: absolute;
+  top: 30%;
+  left: 81%; }
+
+.rombo-neg {
+  width: 25px;
+  position: absolute;
+  top: 40%;
+  left: 90%; }
+
+.flecha-neg {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 85%; }
+
+.elipses-neg {
+  width: 60px;
+  position: absolute;
+  top: 87%;
+  left: 95%; }
+
+.iconosArriba {
+  width: 100%;
+  height: 100%; }
+  .iconosArriba .elipses-ama2 {
+    width: 80px;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    transform: rotate(90deg); }
+  .iconosArriba .estrella-bla {
+    width: 40px;
+    position: relative;
+    top: 80%;
+    left: 0%; }
+  .iconosArriba .elipse-ama3 {
+    width: 30px;
+    position: relative;
+    top: 40%;
+    left: 50%; }
+
+.iconosAbajo {
+  width: 100%;
+  height: 100%; }
+  .iconosAbajo .elipse-bla {
+    width: 15px;
+    position: relative;
+    top: 0%;
+    left: 18%; }
+  .iconosAbajo .flecha-bla {
+    width: 220px;
+    position: relative;
+    top: 0%;
+    left: 50%; }
+  .iconosAbajo .rombo-ama {
+    width: 25px;
+    position: relative;
+    top: 40%;
+    left: 25%; }
+  .iconosAbajo .elipses-bla {
+    width: 70px;
+    position: relative;
+    top: 55%;
+    left: 40%; }
+
 @media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
   /* MAIN */
   section#principalIndex {
