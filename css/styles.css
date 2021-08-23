@@ -412,9 +412,17 @@ section#carouselIndex {
         font-size: 18pt;
         font-family: Roboto, sans-serif; }
 
+img#scroll-next {
+  width: 100px; }
+
+img#scroll-prev {
+  width: 100px;
+  transform: rotate(180deg); }
+
 .boldIndex {
   font-weight: bold; }
 
+/* ICONOS PRINCIPAL */
 .flecha-ama {
   width: 100px;
   position: absolute;
@@ -434,7 +442,7 @@ section#carouselIndex {
   left: 53%; }
 
 .elipses-ama {
-  width: 60px;
+  width: 80px;
   position: absolute;
   top: 9%;
   left: 80%;
@@ -464,52 +472,51 @@ section#carouselIndex {
   top: 87%;
   left: 95%; }
 
-.iconosArriba {
-  width: 100%;
-  height: 100%; }
-  .iconosArriba .elipses-ama2 {
-    width: 80px;
-    position: relative;
-    top: 10%;
-    left: 5%;
-    transform: rotate(90deg); }
-  .iconosArriba .estrella-bla {
-    width: 40px;
-    position: relative;
-    top: 80%;
-    left: 0%; }
-  .iconosArriba .elipse-ama3 {
-    width: 30px;
-    position: relative;
-    top: 40%;
-    left: 50%; }
+/* ICONOS CAROUSEL */
+.elipses-ama2 {
+  width: 80px;
+  position: absolute;
+  top: 115%;
+  left: 2%;
+  transform: rotate(90deg); }
 
-.iconosAbajo {
-  width: 100%;
-  height: 100%; }
-  .iconosAbajo .elipse-bla {
-    width: 15px;
-    position: relative;
-    top: 0%;
-    left: 18%; }
-  .iconosAbajo .flecha-bla {
-    width: 220px;
-    position: relative;
-    top: 0%;
-    left: 50%; }
-  .iconosAbajo .rombo-ama {
-    width: 25px;
-    position: relative;
-    top: 40%;
-    left: 25%; }
-  .iconosAbajo .elipses-bla {
-    width: 70px;
-    position: relative;
-    top: 55%;
-    left: 40%; }
+.estrella-bla {
+  width: 40px;
+  position: absolute;
+  top: 132%;
+  left: 5%; }
+
+.elipse-ama3 {
+  width: 30px;
+  position: absolute;
+  top: 120%;
+  left: 30%; }
+
+.elipse-bla {
+  width: 15px;
+  position: absolute;
+  top: 160%;
+  left: 8%; }
+
+.flecha-bla {
+  width: 220px;
+  position: absolute;
+  top: 155%;
+  left: 23%; }
+
+.rombo-ama {
+  width: 25px;
+  position: absolute;
+  top: 168%;
+  left: 25%; }
+
+.elipses-bla {
+  width: 70px;
+  position: absolute;
+  top: 173%;
+  left: 33%; }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
-  /* MAIN */
   section#principalIndex {
     justify-content: center;
     width: 100%;
@@ -577,6 +584,54 @@ section#carouselIndex {
           font-size: 20pt; }
         section#carouselIndex div#estampasIndex div#estampa p {
           font-size: 12pt; }
+  img#scroll-next {
+    width: 50px; }
+  img#scroll-prev {
+    width: 50px; }
+  /* ICONOS PRINCIPAL */
+  .elipse-ama {
+    width: 17px;
+    top: 80%;
+    left: 10%; }
+  .elipses-ama {
+    width: 60px;
+    top: 7%;
+    left: 10%;
+    transform: rotate(180deg); }
+  .elipse-ama2 {
+    width: 24px;
+    top: 30%;
+    left: 85%; }
+  .flecha-neg {
+    width: 60px;
+    top: 50%;
+    left: 72%;
+    transform: rotate(-30deg); }
+  .elipses-neg {
+    width: 45px;
+    top: 90%;
+    left: 80%; }
+  /* ICONOS CAROUSEL */
+  .elipse-ama3 {
+    width: 15px;
+    top: 200%;
+    left: 35%;
+    transform: rotate(90deg); }
+  .estrella-bla {
+    width: 20px;
+    top: 181%;
+    left: 4%; }
+  .flecha-bla {
+    width: 100px;
+    top: 197%;
+    left: 70%;
+    transform: rotate(-45deg) scaleX(-1); }
+  .rombo-ama {
+    width: 20px;
+    top: 184%;
+    left: 80%; }
+  .hiddenIndex {
+    display: none; }
   .hiddenIndex {
     display: none; } }
 
@@ -639,5 +694,55 @@ section#carouselIndex {
           font-size: 32pt; }
         section#carouselIndex div#estampasIndex div#estampa p {
           font-size: 18pt; }
+  img#scroll-next {
+    width: 75px; }
+  img#scroll-prev {
+    width: 75px; }
+  /* ICONOS PRINCIPAL */
+  .flecha-ama {
+    top: 43%;
+    left: 2%; }
+  .elipse-ama {
+    top: 75%;
+    left: 25%; }
+  .estrella-neg {
+    top: 65%;
+    left: 70%; }
+  .elipses-ama {
+    top: 5%;
+    left: 10%;
+    transform: rotate(90deg); }
+  .elipse-ama2 {
+    top: 10%;
+    left: 70%; }
+  .rombo-neg {
+    top: 20%;
+    left: 90%; }
+  .flecha-neg {
+    top: 50%;
+    left: 80%;
+    transform: rotate(-35deg); }
+  .elipses-neg {
+    top: 80%;
+    left: 85%; }
+  /* ICONOS CAROUSEL */
+  .elipse-ama3 {
+    width: 25px;
+    top: 154%;
+    left: 70%;
+    transform: rotate(90deg); }
+  .estrella-bla {
+    width: 30px;
+    top: 156%;
+    left: 4%; }
+  .flecha-bla {
+    width: 150px;
+    top: 170%;
+    left: 80%;
+    transform: rotate(-45deg) scaleX(-1); }
+  .rombo-ama {
+    width: 20px;
+    top: 175%;
+    left: 15%; }
   .hiddenIndex {
     display: none; } }
