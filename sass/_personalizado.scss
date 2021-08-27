@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_Grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 10px;
+    align-content: center;
+
+
+   .talles_Default, .talles_Uno, .talles_Dos{
+       background-color: lightcoral;
+   }
+       
+    .talles_Uno{
+       grid-column: 1/2;
+       grid-row: 1/2;
+       position: relative;
+
+       .talles_Golden{
+        width: 40%;
+        position: absolute;
+        transform: translate(85%);
+        bottom:   0;
+        border-radius: 15px;
+       }
+   }
+   .talles_Dos{
+      grid-column: 1/2;
+      grid-row: 2/3;
+      position: relative;
+
+      .remera_Personalizado{
+        width: 40%;
+        position: absolute;
+        transform: translate(85%);
+        top:   0;
+        border-radius: 15px;
+      }
+   }
+
+   .talles_Default{
+       grid-row: 1/3;
+       grid-column: 2/3;
+       height: auto;
+       position: relative;
+
+       .logo_Personalizado{
+        width: 85%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+
+   }
+   .talles_Detalle{
+        grid-column: 3/4;
+        grid-row: 1/3;
+
+
+   }
+ 
+}
+
+
+

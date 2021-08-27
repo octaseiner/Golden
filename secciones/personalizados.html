@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>GOLDEN</title>
+</head>
+<body>
+
+    <section>
+        <div class="navbar">menú</div>
+    </section>
+
+    <section>
+        <div class="container_Grid">
+
+            <div class="talles_Default">
+                <img src="../imagenes/Golden LOGO-01.png" class="logo_Personalizado" alt="LogoGolden" id="mainImage">
+            </div>
+            
+        <div class="talles_Uno">
+            <img src="../imagenes/Tabla de talles.jpg" class="talles_Golden" alt="TallesGolden" onclick="setSrc('mainImage', this.src)">
+        </div>
+            
+        <div class="talles_Dos">
+            <img src="../imagenes/Mockup remera .jpg" class="remera_Personalizado" alt="RemerasGolden" onclick="setSrc('mainImage', this.src)">
+        </div>
+            <div class="talles_Detalle">
+              <h1>Remera<br> Harry Dancer</h1>
+              <h2>$1.800</h2>
+              <h5>Detalles</h5>
+              <span>Remeras manga corta blanca de spun 100% polyester</span>
+
+              <select name="lista_Detalle">
+                  <option value="Mujer">Mujer</option>
+                  <option value="Hombre">Hombre</option>
+                  <option value="Niño/a">Niño/a</option>
+              </select>
+
+              <select name="lista_Talle">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+
+            <span><i class="fas fa-shipping-fast"></i>Envíos a todo el país</span>
+
+            <input placeholder="Tu código postal"></input><input type="button" value="Calcular">
+
+            </div>
+
+        </section>
+
+    <section>
+        <footer class="footer">
+            <footer class="text-center text-lg-start">
+                <div class="container p-3" id="footer_container">
+                    <div class="row">
+                        <div class="footer_col col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5>Contacto</h5>
+
+                            <ul class="mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark"><i class="fab fa-instagram"></i>Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark"><i class="fab fa-facebook-f"></i>Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark"><i class="fab fa-twitter"></i>Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark"><i class="far fa-envelope"></i>E-mail</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer_col col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5>Inicio</h5>
+
+                            <ul class="mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark"><i class="fas fa-tshirt"></i>Remeras</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark"><i class="far fa-comments"></i>Preguntas
+                                        frecuentes</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark"><i class="fas fa-headset"></i>Contáctanos</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer_col col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5>Mantenete actualizado</h5>
+
+                            <ul class="mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark">WEB DE GOLDEN</a>
+                                    <img src="../imagenes/Golden LOGO-01.png" class="footer_logo" />
+                                </li>
+                            </ul>
+                            <div class="text-center p-3">
+                                © 2021 Copyright:
+                                <a class="text-dark" href="https://github.com/">github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </footer>
+    </section>
+    <script src="./JS/hover_personalizados.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
