@@ -199,8 +199,6 @@ body {
   grid-template-rows: 2fr 2fr;
   grid-gap: 10px;
   align-content: center; }
-  .container_Grid .talles_Default, .container_Grid .talles_Uno, .container_Grid .talles_Dos {
-    background-color: lightcoral; }
   .container_Grid .talles_Uno {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -210,7 +208,10 @@ body {
       position: absolute;
       transform: translate(85%);
       bottom: 0;
-      border-radius: 15px; }
+      border-radius: 15px;
+      box-shadow: -5px -5px #FCDB35; }
+      .container_Grid .talles_Uno .talles_Golden:active {
+        box-shadow: inset 3px 3px #FCDB35; }
   .container_Grid .talles_Dos {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -220,18 +221,157 @@ body {
       position: absolute;
       transform: translate(85%);
       top: 0;
-      border-radius: 15px; }
+      border-radius: 15px;
+      box-shadow: -5px -5px #FCDB35; }
+      .container_Grid .talles_Dos .remera_Personalizado:active {
+        box-shadow: inset 3px 3px #FCDB35; }
   .container_Grid .talles_Default {
     grid-row: 1/3;
     grid-column: 2/3;
     height: auto;
     position: relative; }
-    .container_Grid .talles_Default .logo_Personalizado {
+    .container_Grid .talles_Default #mainImage {
+      border-radius: 15px;
       width: 85%;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 5px 5px #000000; }
   .container_Grid .talles_Detalle {
     grid-column: 3/4;
     grid-row: 1/3; }
+    .container_Grid .talles_Detalle .indexDetalle {
+      padding-top: 15%; }
+    .container_Grid .talles_Detalle .precioDetalle {
+      padding: 15px 0 15px 0;
+      font-size: 20pt;
+      font-weight: bold; }
+    .container_Grid .talles_Detalle .detalleRemeras {
+      padding-bottom: 20px; }
+    .container_Grid .talles_Detalle .listadosDetalle select {
+      display: inline-block;
+      width: 200px;
+      cursor: pointer;
+      padding: 7px 10px 7px;
+      height: 42px;
+      position: relative;
+      transition: all 0.25s ease; }
+      .container_Grid .talles_Detalle .listadosDetalle select .listadosDetalle select:hover {
+        background: #F4F4F4; }
+    .container_Grid .talles_Detalle .enviosDetalle {
+      padding: 0 0 10px 0; }
+    .container_Grid .talles_Detalle .botonDetalle {
+      background: #000000;
+      color: #FCDB35;
+      padding: 10px; }
+    .container_Grid .talles_Detalle .codigoDetalle {
+      padding: 10px; }
+
+@media (max-width: 1024px) {
+  .talles_Dos {
+    position: relative; }
+    .talles_Dos .remera_Personalizado .talles_Golden {
+      width: 60%; }
+  .listadosDetalle select {
+    display: inline-block;
+    width: 15%;
+    cursor: pointer;
+    padding: 3.5px 5px 3.5px;
+    height: 22px;
+    position: relative;
+    transition: all 0.25s ease; }
+    .listadosDetalle select .listadosDetalle select:hover {
+      background: #F4F4F4; } }
+
+@media (max-width: 768px) {
+  .talles_Detalle {
+    width: 280px;
+    height: 300px; }
+    .talles_Detalle .indexDetalle {
+      padding-top: 15%;
+      font-size: 8pt; }
+    .talles_Detalle .listadosDetalle select {
+      display: inline-block;
+      width: 10%;
+      cursor: pointer;
+      padding: 3.5px 5px 3.5px;
+      height: 22px;
+      position: relative;
+      transition: all 0.25s ease; }
+      .talles_Detalle .listadosDetalle select .listadosDetalle select:hover {
+        background: #F4F4F4; }
+    .talles_Detalle .enviosDetalle {
+      padding: 0 0 10px 0; }
+    .talles_Detalle .botonDetalle {
+      background: #000000;
+      color: #FCDB35;
+      padding: 3px; }
+    .talles_Detalle .codigoDetalle {
+      width: 150px;
+      padding: 3px; } }
+
+@media (max-width: 425px) {
+  .container_Grid {
+    margin: 3px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 2fr 2fr; }
+    .container_Grid .talles_Uno {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: flex-end;
+      justify-self: center;
+      width: 75%; }
+    .container_Grid .talles_Golden {
+      border-radius: 5px; }
+    .container_Grid .talles_Dos {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: flex-start;
+      justify-self: center;
+      width: 75%;
+      margin: 5px; }
+      .container_Grid .talles_Dos .remera_Personalizado {
+        border-radius: 5px; }
+    .container_Grid .talles_Default {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      height: auto;
+      position: relative; }
+      .container_Grid .talles_Default #mainImage {
+        border-radius: 15px;
+        width: 55%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        box-shadow: 0 0 5px 5px #000000; }
+    .container_Grid .talles_Detalle {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      width: auto;
+      height: auto; }
+      .container_Grid .talles_Detalle .indexDetalle {
+        padding-top: 1%;
+        font-size: 8pt; }
+      .container_Grid .talles_Detalle .listadosDetalle select {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        padding: 3.5px 3px 3.5px;
+        height: 22px;
+        position: relative;
+        transition: all 0.25s ease; }
+        .container_Grid .talles_Detalle .listadosDetalle select .listadosDetalle select:hover {
+          background: #F4F4F4; }
+      .container_Grid .talles_Detalle .enviosDetalle {
+        padding: 0 0 5px 0; }
+      .container_Grid .talles_Detalle .botonDetalle {
+        background: #000000;
+        color: #FCDB35;
+        padding: 3px; }
+      .container_Grid .talles_Detalle .codigoDetalle {
+        width: 150px;
+        padding: 3px; } }

@@ -18,11 +18,6 @@ body{
     grid-template-rows: 2fr 2fr;
     grid-gap: 10px;
     align-content: center;
-
-
-   .talles_Default, .talles_Uno, .talles_Dos{
-       background-color: lightcoral;
-   }
        
     .talles_Uno{
        grid-column: 1/2;
@@ -35,6 +30,10 @@ body{
         transform: translate(85%);
         bottom:   0;
         border-radius: 15px;
+        @include tipoBoton;
+        &:active{
+            box-shadow: inset 3px 3px $amarilloFondo;
+        }
        }
    }
    .talles_Dos{
@@ -48,6 +47,10 @@ body{
         transform: translate(85%);
         top:   0;
         border-radius: 15px;
+        @include tipoBoton;
+        &:active{
+            box-shadow: inset 3px 3px $amarilloFondo;
+        }
       }
    }
 
@@ -57,23 +60,222 @@ body{
        height: auto;
        position: relative;
 
-       .logo_Personalizado{
-        width: 85%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-       }
-
+       #mainImage{
+       border-radius: 15px;
+       width: 85%;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       @include vista;
+    }
    }
+
    .talles_Detalle{
         grid-column: 3/4;
         grid-row: 1/3;
 
+        
+        .indexDetalle{
+            padding-top: 15%;
+        }
+        
+        .precioDetalle{
+            padding: 15px 0 15px 0;
+            font-size: 20pt;
+            font-weight: bold;
+        }
 
+        .detalleRemeras{
+            padding-bottom: 20px;
+        }
+
+        .listadosDetalle select{
+            display: inline-block;
+            width: 200px;
+            cursor: pointer;
+            padding: 7px 10px 7px;
+            height: 42px;
+            position: relative;
+            transition: all 0.25s ease;
+
+            .listadosDetalle select:hover{
+                background: $blancoFondo;
+        }
+        }
+
+        .enviosDetalle{
+           padding: 0 0 10px 0 ;
+        }
+
+        .botonDetalle{
+            background: $negroFondo;
+            color: $amarilloFondo;
+            padding: 10px;
+        }
+
+        .codigoDetalle{
+            padding: 10px;
+        }
    }
- 
 }
 
+// Responsive
 
+@media(max-width: 1024px){
 
+   .talles_Dos{
+      position: relative;
+
+      .remera_Personalizado .talles_Golden{
+        width: 60%;
+      }
+   }
+
+    .listadosDetalle select {
+        display: inline-block;
+        width: 15%;
+        cursor: pointer;
+        padding: 3.5px 5px 3.5px;
+        height: 22px;
+        position: relative;
+        transition: all 0.25s ease;
+
+        .listadosDetalle select:hover{
+            background: $blancoFondo;
+    }
+}}
+
+@media(max-width: 768px){
+
+    .talles_Detalle{
+    width: 280px;
+    height: 300px;
+
+    .indexDetalle{
+        padding-top: 15%;
+        font-size: 8pt;
+    }
+    
+    .listadosDetalle select {
+        display: inline-block;
+        width: 10%;
+        cursor: pointer;
+        padding: 3.5px 5px 3.5px;
+        height: 22px;
+        position: relative;
+        transition: all 0.25s ease;
+
+        .listadosDetalle select:hover{
+            background: $blancoFondo;
+    }
+    }
+
+    .enviosDetalle{
+       padding: 0 0 10px 0 ;
+    }
+
+    .botonDetalle{
+        background: $negroFondo;
+        color: $amarilloFondo;
+        padding: 3px;
+    }
+
+    .codigoDetalle{
+        width: 150px;
+        padding: 3px;
+    }
+    }
+}
+@media(max-width: 425px){
+
+    .container_Grid{
+        margin: 3px;
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        grid-template-rows: 2fr 2fr;
+
+        .talles_Uno{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-self: flex-end;
+            justify-self: center;
+            width: 75%;
+        }
+            .talles_Golden{
+             border-radius: 5px;
+        }
+        
+        .talles_Dos{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-self: flex-start;
+            justify-self: center;
+            width: 75%;
+            margin: 5px;
+
+            .remera_Personalizado{
+              border-radius: 5px;
+            }
+         }
+
+        .talles_Default{
+            grid-column: 2/4;
+            grid-row: 1/2;
+            height: auto;
+            position: relative;
+            #mainImage{
+                border-radius: 15px;
+                width: 55%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -30%);
+                @include vista;
+             }
+        }
+        .talles_Detalle{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        width: auto;
+        height: auto;
+    
+        .indexDetalle{
+            padding-top: 1%;
+            font-size: 8pt;
+        }
+
+        
+        .listadosDetalle select {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            padding: 3.5px 3px 3.5px;
+            height: 22px;
+            position: relative;
+            transition: all 0.25s ease;
+            
+
+            .listadosDetalle select:hover{
+                background: $blancoFondo;
+        }
+        }
+    
+        .enviosDetalle{
+           padding: 0 0 5px 0 ;
+        }
+    
+        .botonDetalle{
+            background: $negroFondo;
+            color: $amarilloFondo;
+            padding: 3px;
+        }
+    
+        .codigoDetalle{
+            width: 150px;
+            padding: 3px;
+        }
+        }
+    }
+}

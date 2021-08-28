@@ -32,13 +32,19 @@
         <div class="talles_Dos">
             <img src="../imagenes/Mockup remera .jpg" class="remera_Personalizado" alt="RemerasGolden" onclick="setSrc('mainImage', this.src)">
         </div>
-            <div class="talles_Detalle">
-              <h1>Remera<br> Harry Dancer</h1>
-              <h2>$1.800</h2>
-              <h5>Detalles</h5>
-              <span>Remeras manga corta blanca de spun 100% polyester</span>
 
-              <select name="lista_Detalle">
+            <div class="talles_Detalle">
+
+              <p class="indexDetalle">Inicio <i class="fas fa-angle-right"></i> Remeras <i class="fas fa-angle-right"></i> Harry Style <i class="fas fa-angle-right"></i> Harry Dancer</p>
+              <h1>Remera<br> Harry Dancer</h1>
+              <h2 class="precioDetalle">$1.800</h2>
+              <h5>Detalles</h5>
+              <div class="detalleRemeras">
+              <span>Remeras manga corta blanca de spun 100% polyester</span>
+            </div>
+            <div class="listadosDetalle">
+
+              <select name="lista_Detalle style="height: 69px;">
                   <option value="Mujer">Mujer</option>
                   <option value="Hombre">Hombre</option>
                   <option value="Niño/a">Niño/a</option>
@@ -52,10 +58,11 @@
                 <option value="XL">XL</option>
                 <option value="XXL">XXL</option>
             </select>
-
-            <span><i class="fas fa-shipping-fast"></i>Envíos a todo el país</span>
-
-            <input placeholder="Tu código postal"></input><input type="button" value="Calcular">
+            </div><br>
+            <div class="enviosDetalle">
+            <span><i class="fas fa-shipping-fast"></i>Envíos a todo el país</span><br>
+        </div>
+            <input placeholder="Tu código postal" class="codigoDetalle"></input><input type="button" value="Calcular" class="botonDetalle">
 
             </div>
 
