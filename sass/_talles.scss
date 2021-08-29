@@ -30,7 +30,7 @@ body{
             transform: translate(85%);
             bottom:   0;
             border-radius: 15px;
-    /*         @include tipoBoton; */
+            @include tipoBoton;
             &:active{
                 box-shadow: inset 3px 3px $amarilloFondo;
             }
@@ -48,7 +48,7 @@ body{
             transform: translate(85%);
             top:   0;
             border-radius: 15px;
-    /*         @include tipoBoton; */
+            @include tipoBoton;
             &:active{
                 box-shadow: inset 3px 3px $amarilloFondo;
             }
@@ -68,7 +68,7 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    /*        @include vista; */
+        @include vista;
         }
     }
 
@@ -232,7 +232,7 @@ body{
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -30%);
-/*                 @include vista; */
+                @include vista;
             }
         }
         .talles_Detalle{

@@ -13,17 +13,23 @@ body{
 #preguntas{
     background-color: $blancoFondo;
     width: 100vmax;
+    padding: 50px 100px 100px 100px;
 
     .accordion{
         max-width: 95%;
         height: 100%;
         margin: auto;
         border-radius: 15px;
+                padding-top: 50px;
     }
 
     h1{
         text-align: center;
         padding: 15px;
+        font-size: 38pt;
+        font-weight: bold;
+        font-family: $roboto;
+        margin-bottom: 100px;
     }
 
     .mediosDePago_preguntas{
