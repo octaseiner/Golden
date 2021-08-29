@@ -8,6 +8,7 @@ Diseñadora UX/UI:
 https://www.linkedin.com/in/natalia-zu%C3%B1iga-232699153
 
 Desarrolladores Web:
+
 · Cristian Galera:
 https://github.com/galeracris 
 
