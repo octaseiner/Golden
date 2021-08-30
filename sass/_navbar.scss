@@ -80,8 +80,10 @@ a.dropdown-item:hover {
         width: 100%;
         height: auto;
         background-color: $negroFondo;
-        position: fixed;
-        top: 0px;
+    }
+
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        background-color: $negroFondo;
     }
 
     .navbar-dark .navbar-toggler {

@@ -1,0 +1,15 @@
+// Colores
+
+$amarilloFondo: #FCDB35;
+$negroFondo: #000000;
+$blancoFondo: #F4F4F4;
+
+// mixin
+
+@mixin tipoBoton {
+    box-shadow: -5px -5px $amarilloFondo;
+}
+
+@mixin vista{
+    box-shadow: 0 0 5px 5px $negroFondo;
+}

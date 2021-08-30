@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#preguntas{
+    background-color: $blancoFondo;
+    width: 100vmax;
+
+    .accordion{
+        max-width: 95%;
+        height: 100%;
+        margin: auto;
+        border-radius: 15px;
+    }
+
+    h1{
+        text-align: center;
+        padding: 15px;
+    }
+
+    .mediosDePago_preguntas{
+        width: 11%;
+        padding-right: 13px;
+        height: auto;
+        align-items: center;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+

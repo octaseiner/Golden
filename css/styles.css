@@ -69,9 +69,9 @@ a.dropdown-item:hover {
   .navbar {
     width: 100%;
     height: auto;
-    background-color: #000000;
-    position: fixed;
-    top: 0px; }
+    background-color: #000000; }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    background-color: #000000; }
   .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, 0.55);
     border-color: transparent; }
@@ -137,6 +137,9 @@ body {
       display: flex;
       flex-wrap: wrap; }
 
+#container-footer {
+  background-color: #FCDB35; }
+
 .footer_col {
   width: 25%;
   padding: 0 15px; }
@@ -173,14 +176,20 @@ div#copyright {
   height: auto; }
 
 @media (max-width: 1040px) {
+  .footer {
+    width: auto; }
+    .footer .container {
+      max-width: 100%; }
+      .footer .container .row {
+        display: flex;
+        flex-wrap: wrap; }
   div#copyright {
     width: auto;
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    font-size: 75%; }
+    flex-direction: row; }
     div#copyright div {
-      width: 250px;
+      width: 150px;
       display: flex;
       flex-direction: row; }
       div#copyright div ul {
@@ -193,7 +202,13 @@ div#copyright {
 
 @media (max-width: 574px) {
   .footer_col {
-    width: 100%; } }
+    width: 100%; }
+  div#copyright {
+    font-size: 80%;
+    display: flex;
+    flex-direction: column; }
+    div#copyright div#links ul {
+      list-style-type: none; } }
 
 main#principalPersonalizados {
   padding: 100px; }
@@ -467,6 +482,9 @@ main.remeras {
       border-radius: 10px;
       float: right; }
 
+#container-contacto {
+  background-color: #FCDB35; }
+
 @media (max-width: 1024px) {
   .elipse-formNegra3, .elipse-formNegra2, .elipse-formNegra4 {
     display: none; } }
@@ -490,10 +508,10 @@ body {
 
 #preguntas {
   background-color: #F4F4F4;
-  width: 100vmax;
+  width: auto;
   padding: 50px 100px 100px 100px; }
   #preguntas .accordion {
-    max-width: 95%;
+    width: auto;
     height: 100%;
     margin: auto;
     border-radius: 15px;
@@ -512,6 +530,30 @@ body {
     align-items: center; }
   #preguntas a {
     text-decoration: none; }
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
+  #preguntas {
+    background-color: #F4F4F4;
+    width: auto;
+    padding: 0px 20px 50px 20px; }
+    #preguntas .accordion {
+      width: auto;
+      height: 100%;
+      margin: auto;
+      border-radius: 15px;
+      padding-top: 50px; }
+    #preguntas h1 {
+      text-align: center;
+      padding: 15px;
+      font-size: 20pt;
+      margin-bottom: 0px; }
+    #preguntas .mediosDePago_preguntas {
+      width: 11%;
+      padding-right: 13px;
+      height: auto;
+      align-items: center; }
+    #preguntas a {
+      text-decoration: none; } }
 
 body {
   line-height: 1.5;
@@ -910,12 +952,26 @@ img#scroll-prev {
   top: 173%;
   left: 33%; }
 
-.whatsapp {
-  width: 130px;
-  height: 100px;
+/* .whatsapp {
+    width: 130px;
+    height: 100px;
+    position: fixed;
+    top: 85vh;
+    right: 10vh;
+} */
+#whatsapp {
   position: fixed;
-  top: 85vh;
-  right: 10vh; }
+  right: 0px;
+  bottom: 25px;
+  z-index: 100; }
+  #whatsapp a {
+    background: #FCDB35;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px 0 0 30px;
+    border-top: solid #000000 3px;
+    border-bottom: solid #000000 3px;
+    border-left: solid #000000 3px; }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
   section#principalIndex {

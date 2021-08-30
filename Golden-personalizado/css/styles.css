@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.footer {
+  background-color: #fcdb35;
+  padding: 11px; }
+  .footer .container {
+    max-width: 95%; }
+    .footer .container .row {
+      display: flex;
+      flex-wrap: wrap; }
+
+.footer_col {
+  width: 25%;
+  padding: 0 15px; }
+  .footer_col h5 {
+    font-size: 20pt;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative; }
+  .footer_col ul {
+    list-style: none; }
+    .footer_col ul li {
+      margin-bottom: 5px; }
+      .footer_col ul li a {
+        font-size: 15px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 300;
+        display: block;
+        transition: all 0.3s ease; }
+        .footer_col ul li a:hover {
+          padding-left: 8px; }
+        .footer_col ul li a i {
+          padding-right: 8px;
+          color: #000000; }
+
+.footer_logo {
+  background-color: #000000;
+  width: 25vh;
+  height: auto; }
+
+@media (max-width: 767px) {
+  .footer_col {
+    width: 50%;
+    margin-bottom: 30px;
+    justify-content: flex-start; } }
+
+@media (max-width: 574px) {
+  .footer_col {
+    width: 100%; } }
+
+.navbar {
+  background-color: #000000;
+  max-width: 100%;
+  max-height: 20%;
+  color: #F4F4F4; }
+
+.row-form {
+  background-color: #FCDB35;
+  margin: 35px 0 35px 0;
+  position: relative; }
+  .row-form .estrella-formNegra {
+    width: 50px;
+    position: absolute;
+    top: 5%;
+    left: 43%; }
+  .row-form .elipse-formBlanca1 {
+    width: 20px;
+    position: absolute;
+    top: 60%;
+    left: 10%; }
+  .row-form .rombo-formNegro {
+    width: 13px;
+    position: absolute;
+    top: 75%;
+    left: 15%; }
+  .row-form .elipse-formNegra1 {
+    width: 65px;
+    position: absolute;
+    top: 83%;
+    left: 10%;
+    transform: rotate(90deg); }
+  .row-form .elipse-formNegra2 {
+    width: 65px;
+    position: absolute;
+    top: 83%;
+    left: 16.5%;
+    transform: rotate(90deg); }
+  .row-form .rombo-formNegro2 {
+    width: 10px;
+    position: absolute;
+    top: 85%;
+    left: 35%; }
+  .row-form .elipse-formBlanca2 {
+    width: 10px;
+    position: absolute;
+    top: 75%;
+    left: 40%; }
+  .row-form .elipse-formNegra3 {
+    width: 65px;
+    position: absolute;
+    top: -8%;
+    right: 0;
+    transform: rotate(90deg); }
+  .row-form .elipse-formNegra4 {
+    width: 65px;
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    right: 0;
+    transform: rotate(90deg); }
+  .row-form .titulo-contacto {
+    font-size: 38pt;
+    font-weight: bold;
+    margin-top: 10%; }
+  .row-form .subtitulo-contacto {
+    font-size: 18pt;
+    padding-top: 10px; }
+  .row-form .form-class {
+    outline: none; }
+    .row-form .form-class .form-label {
+      color: #F4F4F4; }
+    .row-form .form-class .btn-form {
+      margin: 15px 0 15px;
+      padding: 5px 30px;
+      border: none;
+      font-weight: bold;
+      text-align: center;
+      background-color: #000000;
+      color: #FCDB35;
+      border-radius: 10px;
+      float: right; }
+
+@media (max-width: 1024px) {
+  .elipse-formNegra3, .elipse-formNegra2, .elipse-formNegra4 {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .elipse-formNegra2, .elipse-formNegra4, .elipse-formNegra1, .rombo-formNegro2, .elipse-formBlanca1, .elipse-formBlanca2, .rombo-formNegro {
+    display: none; } }
+
+@media (max-width: 425px) {
+  .estrella-formNegra {
+    display: none; } }
+
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#preguntas {
+  background-color: #F4F4F4;
+  width: 100vmax; }
+  #preguntas .accordion {
+    max-width: 95%;
+    height: 100%;
+    margin: auto;
+    border-radius: 15px; }
+  #preguntas h1 {
+    text-align: center;
+    padding: 15px; }
+  #preguntas .mediosDePago_preguntas {
+    width: 11%;
+    padding-right: 13px;
+    height: auto;
+    align-items: center; }
+  #preguntas a {
+    text-decoration: none; }
+
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container_Grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-template-rows: 2fr 2fr;
+  grid-gap: 10px;
+  align-content: center; }
+  .container_Grid .talles_Uno {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative; }
+    .container_Grid .talles_Uno .talles_Golden {
+      width: 40%;
+      position: absolute;
+      transform: translate(85%);
+      bottom: 0;
+      border-radius: 15px;
+      box-shadow: -5px -5px #FCDB35; }
+      .container_Grid .talles_Uno .talles_Golden:active {
+        box-shadow: inset 3px 3px #FCDB35; }
+  .container_Grid .talles_Dos {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative; }
+    .container_Grid .talles_Dos .remera_Personalizado {
+      width: 40%;
+      position: absolute;
+      transform: translate(85%);
+      top: 0;
+      border-radius: 15px;
+      box-shadow: -5px -5px #FCDB35; }
+      .container_Grid .talles_Dos .remera_Personalizado:active {
+        box-shadow: inset 3px 3px #FCDB35; }
+  .container_Grid .talles_Default {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    height: auto;
+    position: relative; }
+    .container_Grid .talles_Default #mainImage {
+      border-radius: 15px;
+      width: 85%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 5px 5px #000000; }
+  .container_Grid .talles_Detalle {
+    grid-column: 3/4;
+    grid-row: 1/3; }
+    .container_Grid .talles_Detalle .indexDetalle {
+      padding-top: 15%; }
+    .container_Grid .talles_Detalle .precioDetalle {
+      padding: 15px 0 15px 0;
+      font-size: 20pt;
+      font-weight: bold; }
+    .container_Grid .talles_Detalle .detalleRemeras {
+      padding-bottom: 20px; }
+    .container_Grid .talles_Detalle .listadosDetalle select {
+      display: inline-block;
+      width: 200px;
+      cursor: pointer;
+      padding: 7px 10px 7px;
+      height: 42px;
+      position: relative;
+      transition: all 0.25s ease; }
+      .container_Grid .talles_Detalle .listadosDetalle select .listadosDetalle select:hover {
+        background: #F4F4F4; }
+    .container_Grid .talles_Detalle .enviosDetalle {
+      padding: 0 0 10px 0; }
+    .container_Grid .talles_Detalle .botonDetalle {
+      background: #000000;
+      color: #FCDB35;
+      padding: 10px; }
+    .container_Grid .talles_Detalle .codigoDetalle {
+      padding: 10px; }
+
+@media (max-width: 1024px) {
+  .talles_Dos {
+    position: relative; }
+    .talles_Dos .remera_Personalizado .talles_Golden {
+      width: 60%; }
+  .listadosDetalle select {
+    display: inline-block;
+    width: 15%;
+    cursor: pointer;
+    padding: 3.5px 5px 3.5px;
+    height: 22px;
+    position: relative;
+    transition: all 0.25s ease; }
+    .listadosDetalle select .listadosDetalle select:hover {
+      background: #F4F4F4; } }
+
+@media (max-width: 768px) {
+  .talles_Detalle {
+    width: 280px;
+    height: 300px; }
+    .talles_Detalle .indexDetalle {
+      padding-top: 15%;
+      font-size: 8pt; }
+    .talles_Detalle .listadosDetalle select {
+      display: inline-block;
+      width: 10%;
+      cursor: pointer;
+      padding: 3.5px 5px 3.5px;
+      height: 22px;
+      position: relative;
+      transition: all 0.25s ease; }
+      .talles_Detalle .listadosDetalle select .listadosDetalle select:hover {
+        background: #F4F4F4; }
+    .talles_Detalle .enviosDetalle {
+      padding: 0 0 10px 0; }
+    .talles_Detalle .botonDetalle {
+      background: #000000;
+      color: #FCDB35;
+      padding: 3px; }
+    .talles_Detalle .codigoDetalle {
+      width: 150px;
+      padding: 3px; } }
+
+@media (max-width: 425px) {
+  .container_Grid {
+    margin: 3px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 2fr 2fr; }
+    .container_Grid .talles_Uno {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: flex-end;
+      justify-self: center;
+      width: 75%; }
+    .container_Grid .talles_Golden {
+      border-radius: 5px; }
+    .container_Grid .talles_Dos {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: flex-start;
+      justify-self: center;
+      width: 75%;
+      margin: 5px; }
+      .container_Grid .talles_Dos .remera_Personalizado {
+        border-radius: 5px; }
+    .container_Grid .talles_Default {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      height: auto;
+      position: relative; }
+      .container_Grid .talles_Default #mainImage {
+        border-radius: 15px;
+        width: 55%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        box-shadow: 0 0 5px 5px #000000; }
+    .container_Grid .talles_Detalle {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      width: auto;
+      height: auto; }
+      .container_Grid .talles_Detalle .indexDetalle {
+        padding-top: 1%;
+        font-size: 8pt; }
+      .container_Grid .talles_Detalle .listadosDetalle select {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        padding: 3.5px 3px 3.5px;
+        height: 22px;
+        position: relative;
+        transition: all 0.25s ease; }
+        .container_Grid .talles_Detalle .listadosDetalle select .listadosDetalle select:hover {
+          background: #F4F4F4; }
+      .container_Grid .talles_Detalle .enviosDetalle {
+        padding: 0 0 5px 0; }
+      .container_Grid .talles_Detalle .botonDetalle {
+        background: #000000;
+        color: #FCDB35;
+        padding: 3px; }
+      .container_Grid .talles_Detalle .codigoDetalle {
+        width: 150px;
+        padding: 3px; } }

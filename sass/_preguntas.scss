@@ -12,11 +12,11 @@ body{
 
 #preguntas{
     background-color: $blancoFondo;
-    width: 100vmax;
+    width: auto;
     padding: 50px 100px 100px 100px;
 
     .accordion{
-        max-width: 95%;
+        width: auto;
         height: 100%;
         margin: auto;
         border-radius: 15px;
@@ -45,3 +45,36 @@ body{
 }
 
 
+@media only screen and (min-device-width : 280px) and (max-device-width : 767px) {
+    #preguntas{
+        background-color: $blancoFondo;
+        width: auto;
+        padding: 0px 20px 50px 20px;
+    
+        .accordion{
+            width: auto;
+            height: 100%;
+            margin: auto;
+            border-radius: 15px;
+                    padding-top: 50px;
+        }
+    
+        h1{
+            text-align: center;
+            padding: 15px;
+            font-size: 20pt;
+            margin-bottom: 0px;
+        }
+    
+        .mediosDePago_preguntas{
+            width: 11%;
+            padding-right: 13px;
+            height: auto;
+            align-items: center;
+        }
+    
+        a{
+            text-decoration: none;
+        }
+    }
+}

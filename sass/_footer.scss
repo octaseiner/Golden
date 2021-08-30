@@ -25,6 +25,10 @@ body{
     }
 }
 
+#container-footer {
+    background-color: $amarilloFondo; 
+}
+
 .footer_col{
     width: 25%;
     padding: 0 15px;
@@ -74,15 +78,28 @@ div#copyright {
 
 // Responsive
 @media(max-width: 1040px){
+
+    .footer {
+        width: auto;
+        
+        .container{
+            max-width: 100%;
+    
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
     div#copyright {
         width: auto;
         margin-top: 20px;
         display: flex;
         flex-direction: row;
-        font-size: 75%;
 
         div {
-            width: 250px;
+            width: 150px;
             display: flex;
             flex-direction: row;
 
@@ -103,6 +120,18 @@ div#copyright {
 @media(max-width: 574px){
     .footer_col{
         width: 100%;
+    }
+
+    div#copyright {
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+
+        div#links {
+            ul {
+                list-style-type: none;
+            }
+        }
     }
 }
 
